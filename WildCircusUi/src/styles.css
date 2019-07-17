@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    background-image: url('http://www.gifsanimes.fr/fonds-ecran/fonds-ecran/rouge/rouge-gifs-animes-451980.jpg');
+}
+
+.row {
+    margin: 0px;
+}

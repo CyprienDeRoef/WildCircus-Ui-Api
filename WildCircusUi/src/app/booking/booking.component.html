@@ -1,0 +1,41 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div id="collapseForm">
+                <div class="mb-3 card-body">
+                    <form (ngSubmit)="onSubmit()" [formGroup]="offerForm">
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <input class="form-control" placeholder="Nom" name="name" type="text"
+                                    formControlName="name" />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-6">
+                                <input class="form-control" placeholder="Nombre de personnes" name="many" type="text"
+                                    formControlName="many" />
+                            </div>
+                            <div class="form-group col-6">
+                                <input class="form-control" placeholder="Date" name="date" type="text"
+                                    formControlName="date" />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col">
+                                <input class="form-control" placeholder="Spectacle" name="show" type="text"
+                                    formControlName="show" />
+                            </div>
+                        </div>
+                    </form>
+                    <button class="btn btn-info btn-block mt-3 mb-1" type="submit" [disabled]="!offerForm.valid">
+                        Sauvegarder
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div *ngFor="let booking of bookings" class="card mt-4">
+        <div class="card-body"> Reservation : {{ booking.name }}
+        </div>
+    </div>
+</div>

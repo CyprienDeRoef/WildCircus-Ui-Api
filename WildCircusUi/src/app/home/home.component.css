@@ -1,0 +1,47 @@
+.container-fluid {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+.image-home {
+    background-image: url('../../assets/home.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    position: relative;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.wcs {
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    color: white;
+    font-size: 3em;
+    margin-left: 15%;
+}
+
+.wild-circus {
+    text-align: center;
+    text-shadow: 4px 4px 4px black;
+    padding: 5px;
+    margin-top: 10%;
+    color: white;
+    font-size: 5em;
+    margin-left: 25%;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    margin-left: 0%;
+}
+
+.card-body {
+    background-image: url('https://image.freepik.com/photos-gratuite/vieux-papier-fond-texture-grunge_1048-4464.jpg');
+    background-size: cover;
+    font-size: 2em;
+}
